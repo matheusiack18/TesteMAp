@@ -1,0 +1,117 @@
+/* Cores principais da MAP: 
+#DAFD00 -> amarelo claro
+#fff -> Branco 
+#000 -> Preto
+*/
+/* Outras cores utilizadas para a estilizacao
+#636363 -> Cinza
+#2dff46 -> Verde
+*/
+
+/* Personalizando a pagina toda */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Personalizando o corpo da pagina */
+body{
+    background-color: #DAFD00;
+    color: #000;
+
+}
+
+/* Personalizando h1, h2, h3: */
+h1,h2{
+    text-align: center;
+    margin: 20px;
+}
+
+h3{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/*Foi personalizado so para alinhar o texto ao centro */
+.container{
+    text-align: center;
+}
+/* Aqui ja e pra personalizar a caixa de texto, onde o usuario vai colocar o usuario dele */
+.container input{
+    width: 20%;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 15px;
+}   
+/* Personalizando o Botao de "Buscar" */
+button{
+    padding: 5px 5px;
+    background-color: #636363;
+    color: #fff;
+    border: 2px solid ;
+    cursor: pointer;
+    font-size: small;
+    margin-left: 5px;
+}
+
+/* Chama o Button e personaliza para quando o usuario coloca o cursor sobre o botao, nesse caso ele vai mudar o background e a cor do texto */
+button:hover{
+    background-color: #2dff46;
+    color: #000;
+}
+
+/* Tirando a decoracao padrao do link e personalizando*/
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+.container-main{
+    margin: 30px;
+}
+
+/* Aqui e onde foi personalizado a caixa onde tem a descicao, o titulo e a url do github de determinado usuario */
+.Box{
+    border: 1px solid #fff;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px; /* Espaçamento */
+    border-radius: 5px;
+    margin: 20px;
+}
+
+/* Chama a class Box e alinha os itens e textos */
+.Box div{
+    display: flex;
+    flex-direction: column; /* Colocar os itens em coluna para manter o título e a descrição */
+    align-items: center; /* Centralizar os itens na box */
+}
+
+/* Personalizacao so do titulo dentro da box */
+.container-main .Box div .title{
+    font-size: x-large;
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 10px; /* Espaçamento entre o título e a descrição */
+}
+
+/* Personalizacao so da descricao  */
+.container-main .Box div .Descricao{
+    font-size: medium;
+    color: #636363;
+    text-align: center; 
+}
+
+/* 
+#nome{
+    color: #3a92d5;
+    margin: 1px;
+} */

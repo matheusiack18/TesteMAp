@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAP</title>
+    <link rel="stylesheet" href="style.css"> <!--Pegando o arquivo css-->
+    <link rel="shortcut icon" href="https://media.licdn.com/dms/image/v2/C4D0BAQH0lo-u5Wpe7g/company-logo_200_200/company-logo_200_200/0/1654550785312/mapmarketplaces_logo?e=2147483647&v=beta&t=uc-BPtacGsO7DjuAtE9pxFPcCuhjCPgGn2MhPkfoDFs" type="image/x-icon">
+</head>
+<body>
+    <!-- Aplicacao que pesquise o nome do usuario do git e mostre o repositorio de determinado usuario -->
+    
+    <h1>MAP GITHUB API</h1> <!--Titulo do site que tem a aplicacao da API-->
+
+    <main class="container-main"> <!-- Main principal (container-main), e aqui onde tudo sera feito-->
+
+        <div class="container">
+            <h3>Consultando Repositorios no GITHUB</h3>
+            <input type="text" id="username" placeholder="Digite o nome de usuário"> <!--Input para digitar o nome do usario e logo em seguida realizar a busca-->
+            <button id="button" onclick="getRepos()">Buscar</button> <!--Botao de busca-->
+            <div id="repoList"></div> <!-- id que sera usada no Javascript -->
+        </div>
+
+        <!-- Esse comentario sera uma breve explicacao do que foi feito:
+
+        A div a seguir sera inserida no JavaScript para puxar os dados do arquivo JSON e apresentar no front, a div foi feita aqui e depois
+         copiada e colada no JavaScript para ver como ficava a estilizacao dos elementos a cada atualizacao. Entao se aqui estiver comentado e porque 
+         esse codigo esta no arquivo "script.js"
+
+        <div class="Box">
+
+            <h3 id="nome">Username: ${item.owner.login}</h3>
+
+            <div> Div para Titulo
+                <h4 class="title">${item.name}</h4>
+                <span class="Descricao">Descrição</span>
+            </div>
+
+            <div> Div para Url
+                <a href="${item.html_url}" target="_blank">${item.html_url}</a>
+              
+            </div>
+        </div> -->
+
+    </main>
+
+    <script src="script.js"></script>   <!--Chamada do arquivo JavaScript-->
+</body>
+<!-- OBSERVACAO FINAL -->
+<!-- Pensei em colocar o nome do usuario que foi inserido pelo usuario na caixa de texto, na pagina so que eu nao fiz pois pensei que nao ia dar tempo. 
+-->
+</html>
